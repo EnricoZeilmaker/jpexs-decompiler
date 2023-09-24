@@ -241,7 +241,7 @@
         </propertyfile>        
 
         <jar destfile="${dist.dir}/${jar.filename}.jar" basedir="${compile.dir}">
-            
+            <zipgroupfileset dir="${lib.dir}" includes="*.jar"/>
         </jar>
     </target>
     
